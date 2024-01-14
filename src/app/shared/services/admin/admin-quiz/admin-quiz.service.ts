@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminQuizService {
-  private baseUrl:string = "https://localhost:7030/api/Quiz/"
+  private baseUrl:string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/Quiz/"
 
   constructor(private http: HttpClient) { }
 

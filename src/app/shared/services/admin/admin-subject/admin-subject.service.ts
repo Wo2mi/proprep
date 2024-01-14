@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AdminSubjectService {
 
-  private baseUrl:string = "https://localhost:7030/api/Subject/"
+  private baseUrl:string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/Subject/"
   constructor(private http: HttpClient) { }
 
   GetAllSubjects(): Observable<any>{

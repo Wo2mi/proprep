@@ -8,7 +8,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 })
 export class AuthService {
   private userPayload: any;
-  private baseUrl: string = 'https://localhost:7030/api/Auth/';
+  private baseUrl: string = 'https://herokuproprep-277c1e0acbad.herokuapp.com/api/Auth/';
   constructor(private http: HttpClient, private route: Router) {
     this.userPayload = this.decodedToken();
   }
