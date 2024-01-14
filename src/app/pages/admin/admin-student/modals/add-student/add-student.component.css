@@ -1,0 +1,34 @@
+form {
+  width: 800px;
+  height: 100%;
+  justify-content: center;
+}
+
+.content {
+  padding-top: 10px;
+  height: 100%;
+
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+
+.row mat-form-field {
+  width: 100%;
+}
+
+.action {
+  padding: 0px 16px 12px;
+}
+.action button {
+  flex: 1;
+
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+

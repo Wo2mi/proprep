@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files 
+    Color:
+    
+    #00072d;
+    Font:
+
+*/
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; }

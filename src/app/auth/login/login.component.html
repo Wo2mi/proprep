@@ -1,0 +1,54 @@
+<app-nav-bar> </app-nav-bar>
+<div class="container">
+  <div class="content">
+    <mat-toolbar class="content-title" color="primary"> Đăng nhập </mat-toolbar>
+    <mat-card>
+      <form [formGroup]="signinForm">
+        <mat-form-field appearance="fill">
+          <mat-icon matPrefix>person_outline</mat-icon>
+          <mat-label>Tên đăng nhập</mat-label>
+          <input
+            matInput
+            placeholder="Tên đăng nhập"
+            formControlName="userName"
+            type="text"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-icon matPrefix>lock_outline</mat-icon>
+          <mat-label>Mật khẩu</mat-label>
+          <input
+            formControlName="password"
+            matInput
+            [type]="hide ? 'password' : 'text'"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
+            <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+          </button>
+        </mat-form-field>
+        <div class="footer">
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="onSignIn()"
+            type="submit"
+          >
+            Đăng nhập
+          </button>
+          <span
+            >Không có tài khoản?
+            <a id="signupnow" routerLink="/signup" color="primary">
+              Đăng ký ngay!</a
+            ></span
+          >
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>
