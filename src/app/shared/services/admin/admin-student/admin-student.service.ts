@@ -8,7 +8,7 @@ import { User } from '../../../models/user.model';
 })
 export class AdminStudentService {
 
-  private baseUrl:string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/User/"
+  private baseUrl:string = "https://localhost:7030/api/User/"
   constructor(private http: HttpClient) { }
 
   GetAllUsers(): Observable<any>{

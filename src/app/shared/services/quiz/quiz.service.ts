@@ -13,7 +13,7 @@ export class QuizService {
   public correctAnswerCount: number = 0;
   public score: number = 0;
 
-  private baseUrl:string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/Quiz/"
+  private baseUrl:string = "https://localhost:7030/api/Quiz/"
   constructor(private http : HttpClient) { }
 
   RandomSubjectQuiz(id:number): Observable<any>{

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ResultService {
-  private baseUrl: string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/Result/"
+  private baseUrl: string = "https://localhost:7030/api/Result/"
   constructor(private http: HttpClient) { }
 
   GetResult(id: number): Observable<any>{

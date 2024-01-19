@@ -6,7 +6,7 @@ import { Observable, map, pipe } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminHistoryService {
-  private baseUrl:string = "https://herokuproprep-277c1e0acbad.herokuapp.com/api/TestResult/"
+  private baseUrl:string = "https://localhost:7030/api/TestResult/"
 
   constructor(private http: HttpClient) { 
   }
